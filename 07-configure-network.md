@@ -172,14 +172,14 @@ This playbook installs and configures networking on managed hosts.
 ```bash
 ansible-navigator run configure-network.yml -i inventory -m stdout 
 ```
-### 🚦  **Verify: Ensure the network configuration**
+### 🚦  **1- Verify: Ensure the network configuration**
 Execute the following command to verify that the network configuration were applied to the nodes.
 
 ```bash
 ssh node3 ip address show eth0
 ```
 
-### **Verify: Run the get playbook**
+### 🚦 **2- Verify using Ansible: Run the get playbook**
 ```bash
 ansible-navigator run get-network.yml -i inventory -m stdout 
 ```
