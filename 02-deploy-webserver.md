@@ -437,3 +437,7 @@ This playbook cleans the environment.
    ```bash
    ansible-navigator run  playbook_clean.yml -i inventory -m stdout 
    ```
+
+
+
+###please check **force_handlers: yes** at the play level  or ** - meta: flush_handlers**   as a task
