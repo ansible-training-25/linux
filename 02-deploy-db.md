@@ -186,7 +186,7 @@ Execute the following command to verify that the DB repond to queries.
 ```bash
 
 ssh node1 
-mysql -u myuser -p mypassword
+mysql -u myuser -p 
 USE mydb;
 SELECT * FROM my_table;
 
