@@ -230,12 +230,4 @@ This playbook cleans the environment.
       
 
 ```
-   ```bash
-   ansible-navigator run playbook_clean.yml -m stdout -i inventory
-   ```
-    # Stop and disable database service
-    - name: Stop and disable database service
-      ansible.builtin.service:
-        name: "{{ db_service }}"
-        state: stopped
-        enabled: false
+
