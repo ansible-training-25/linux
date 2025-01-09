@@ -242,7 +242,12 @@ curl http://node2:8080
 curl http://node3:8080
 
 ```
-
+**Order of execution:**
+- pre tasks
+- roles
+- tasks
+- handlers notified
+- post tasks
 ---
 
 ## 📖 **Key Concepts Used**
